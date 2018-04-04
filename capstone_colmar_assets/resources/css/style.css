@@ -1,0 +1,378 @@
+html{
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+}
+
+.area{
+  display: flex;
+  width: 100%;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 400;
+  color: #808080;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+
+/**header**/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo{
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.logo span{
+  text-transform: uppercase;
+}
+nav ul{
+
+   display: inline-flex;
+   align-items: center;
+   margin-right: 1.5rem;
+   margin-top: 1.5rem;
+}
+
+ul li a{
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+#colmar {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #1B202B;
+}
+
+#academy {
+  font-family: arial;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #687083;
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  header .logo, header nav {
+    display: none;
+  }
+
+  nav.mobile, nav.mobile ul {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+
+  }
+
+}
+
+/*banner*/
+.area.main{
+  padding-top: 4rem;
+  background-color: #d9d9d9;
+  align-items: center;
+  padding-bottom: 2rem;
+
+}
+.image-container{
+  width: 60%;
+}
+
+.image-container img{
+  width: 90%;
+  height: auto;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+
+}
+.main.banner-content{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.banner-content a {
+  border:  1px solid #4d4d4d;
+  padding: 0.5rem 8rem;
+  background-color: #4d4d4d;
+  font-size: 1.2rem;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .area .main{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .image-container img{
+    display: none;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 180px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .banner-content {
+    margin: 32px 16px 32px 16px;
+    text-align: center;
+  }
+
+  .banner-content a, .banner-content h1, .banner-content h2 {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+
+
+/*second banner*/
+
+.area.second{
+  display: flex;
+  background-color: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px;
+
+}
+.half{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.half .image-container{
+  width: 90%;
+  height: auto;
+}
+
+.second .banner-content{
+  margin-left: 1.5rem;
+}
+
+.box{
+  align-items: center;
+  align-content: center;
+  height: auto;
+  display: flex;
+
+}
+#guest{
+  align-items: center;
+  align-content: center;
+  height: auto;
+  display: flex;
+  background-color: #d9d9d9;
+
+}
+
+.column{
+  width: 40%;
+  align-items: left;
+   border-left: 1px solid #C5CAD7;
+}
+
+.box .image-container{
+  width:35%;
+  height: auto;
+}
+
+
+.box .content{
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.box .content a{
+  color: blue;
+  font-weight: 600;
+}
+
+/*course information*/
+
+.area.courses{
+  display: block;
+  background-color: #d9d9d9;
+}
+
+.course-containers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 4px;
+}
+
+.rectangule {
+  width: 260px;
+  background-color: white;
+  margin-right: 32px;
+  margin-bottom: 16px;
+}
+
+.course-containers img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.course-containers .content {
+  flex-direction: column;
+  margin-left: 16px;
+  width: 220px;
+  height: 160px;
+  display: flex;
+}
+
+.course-containers .content h4{
+  font-size: 20px;
+  color: #666666;
+  font-weight: 700;
+  text-align: center;
+  line-height: 32px;
+}
+
+.course-containers .content span{
+  text-align: left;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.course-containers .content p{
+  text-align: left;
+  line-height: 30px;
+}
+.area .courses h2{
+  text-align: center;
+}
+
+/*thesis*/
+.area_thesis{
+  background-color:  #f2f2f2;
+}
+
+.media{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.video{
+  width: 60%;
+  height: auto;
+}
+
+.area_thesis h4{
+ width: 100%;
+ text-align: center;
+ padding-top: 32px;
+ padding-bottom: 32px;
+ font-size: 2rem;
+}
+
+.right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.features img{
+  padding: 16px;
+}
+
+.features{
+  display: inline-flex;
+  width: 35%;
+}
+.features .content{
+  width: 65%;
+  align-items: baseline;
+
+}
+
+#fisma{
+  background-color: #d9d9d9;
+}
+
+
+.container{
+  align-items: center;
+  align-content: center;
+  height: auto;
+  display: flex;
+
+}
+
+.container .content{
+  margin-left: 120px;
+
+}
+
+.container .content h5{
+  font-size: 32px;
+  color:#595959;
+
+}
+
+.container .content p{
+  font-size: 1.5rem;
+  color:#262626;
+  line-height: 1;
+
+}
+
+.video .content h4{
+  text-align: left;
+}
+
+.video .content p{
+  color: #8c8c8c;
+  line-height: 28px;
+  font-size: 1.2rem;
+}
+
+/*footer*/
+footer {
+  height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #C5CAD7;
+}
+
+
+footer span {
+  margin-left: 24px;
+  font-size: 0.75rem;
+  color: #8c8c8c;
+  margin-top: 24px;
+}
+
+footer nav ul li a {
+  font-size: 0.8rem;
+  color: #8c8c8c;
+}
